@@ -6,9 +6,9 @@ const answersSection = document.getElementById("answers-section");
 showAnswers.addEventListener("click", function(){
     if (showAnswers.value ==="Show answers") {
     showAnswers.setAttribute("value", "Hide answers");
-     answersSection.classList.remove("d-none")}
+    answersSection.classList.remove("d-none")}
     else{
-      answersSection.setAttribute("class", "d-none")
+    answersSection.setAttribute("class", "d-none")
       showAnswers.setAttribute("value", "Show answers")
     }
 })
@@ -30,8 +30,9 @@ checkBtn.addEventListener("click", function(){
     scoreSpan.textContent=`${incremation}`
 });
 
-// variables and a function for clear button 
+// variable and function for clear button 
 const clearButton = document.getElementById("clear-button");
+
 clearButton.addEventListener("click", function(){
     window.location.reload()
 });
